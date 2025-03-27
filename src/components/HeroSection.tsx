@@ -53,25 +53,25 @@ const HeroSection: React.FC = () => {
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="hero-bg absolute top-0 right-0 w-full h-full bg-gradient-radial from-skillora-blue/20 via-transparent to-transparent opacity-50"></div>
-        <div className="absolute top-1/4 left-1/3 w-72 h-72 rounded-full bg-skillora-blue/20 filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/3 w-96 h-96 rounded-full bg-skillora-pink/20 filter blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="hero-bg absolute top-0 right-0 w-full h-full bg-gradient-radial from-orkast-blue/20 via-transparent to-transparent opacity-50"></div>
+        <div className="absolute top-1/4 left-1/3 w-72 h-72 rounded-full bg-orkast-blue/20 filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-96 h-96 rounded-full bg-orkast-pink/20 filter blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
 
-      <div className="container-skillora flex flex-col lg:flex-row items-center justify-between relative z-10 px-6">
+      <div className="container-orkast flex flex-col lg:flex-row items-center justify-between relative z-10 px-6">
         <div className="lg:w-1/2 py-12 animate-fade-in" style={{animationDelay: '0.2s'}}>
-          <div className="inline-block px-3 py-1 rounded-full bg-skillora-blue/10 text-skillora-blue font-medium text-sm mb-6">
+          <div className="inline-block px-3 py-1 rounded-full bg-orkast-blue/10 text-orkast-blue font-medium text-sm mb-6">
             The Future of Education is Here
           </div>
           <h1 className="heading-xl">
             <span className="block">Revolutionizing</span>
-            <span className="bg-gradient-to-r from-skillora-blue via-skillora-purple to-skillora-pink bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orkast-blue via-orkast-purple to-orkast-pink bg-clip-text text-transparent">
               Education
             </span>
             <span className="block">for the Future!</span>
           </h1>
           <p className="subheading">
-            Learn the real-world skills that schools don't teach you. Join thousands of students already transforming their future with Skillora.
+            Learn the real-world skills that schools don't teach you. Join thousands of students already transforming their future with Orkast.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <button 
@@ -91,7 +91,7 @@ const HeroSection: React.FC = () => {
 
         <div className="lg:w-1/2 p-6 flex justify-center items-center animate-fade-in" style={{animationDelay: '0.5s'}}>
           <div className="hero-image relative w-full max-w-lg aspect-square">
-            <div className="absolute inset-0 bg-gradient-to-br from-skillora-blue/80 via-skillora-purple/80 to-skillora-pink/80 rounded-2xl opacity-80"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-orkast-blue/80 via-orkast-purple/80 to-orkast-pink/80 rounded-2xl opacity-80"></div>
             <img
               src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b"
               alt="Futuristic learning environment"
@@ -104,7 +104,7 @@ const HeroSection: React.FC = () => {
 
       <button
         onClick={scrollToNext}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-foreground hover:text-skillora-blue transition-colors animate-float"
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-foreground hover:text-orkast-blue transition-colors animate-float"
       >
         <ArrowDown size={24} />
       </button>

@@ -37,10 +37,10 @@ const Navbar: React.FC = () => {
         isScrolled ? 'glass-light py-3 shadow-md' : 'py-5'
       }`}
     >
-      <div className="container-skillora flex justify-between items-center px-6 md:px-12">
+      <div className="container-orkast flex justify-between items-center px-6 md:px-12">
         <div className="flex items-center">
-          <span className="text-2xl font-poppins font-bold bg-gradient-to-r from-skillora-blue via-skillora-purple to-skillora-pink bg-clip-text text-transparent">
-            Skillora
+          <span className="text-2xl font-poppins font-bold bg-gradient-to-r from-orkast-blue via-orkast-purple to-orkast-pink bg-clip-text text-transparent">
+            Orkast
           </span>
         </div>
 
@@ -48,19 +48,19 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center space-x-8">
           <button 
             onClick={() => scrollToSection('about')}
-            className="font-medium text-foreground hover:text-skillora-blue transition-colors"
+            className="font-medium text-foreground hover:text-orkast-blue transition-colors"
           >
             About
           </button>
           <button 
             onClick={() => scrollToSection('programs')}
-            className="font-medium text-foreground hover:text-skillora-blue transition-colors"
+            className="font-medium text-foreground hover:text-orkast-blue transition-colors"
           >
             Programs
           </button>
           <button 
             onClick={() => scrollToSection('why-choose-us')}
-            className="font-medium text-foreground hover:text-skillora-blue transition-colors"
+            className="font-medium text-foreground hover:text-orkast-blue transition-colors"
           >
             Why Us
           </button>
@@ -81,22 +81,22 @@ const Navbar: React.FC = () => {
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div className="md:hidden glass-light absolute top-full left-0 right-0 shadow-lg animate-fade-in">
-          <div className="container-skillora px-6 py-6 flex flex-col space-y-4">
+          <div className="container-orkast px-6 py-6 flex flex-col space-y-4">
             <button 
               onClick={() => scrollToSection('about')}
-              className="font-medium text-foreground hover:text-skillora-blue transition-colors py-2"
+              className="font-medium text-foreground hover:text-orkast-blue transition-colors py-2"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('programs')}
-              className="font-medium text-foreground hover:text-skillora-blue transition-colors py-2"
+              className="font-medium text-foreground hover:text-orkast-blue transition-colors py-2"
             >
               Programs
             </button>
             <button 
               onClick={() => scrollToSection('why-choose-us')}
-              className="font-medium text-foreground hover:text-skillora-blue transition-colors py-2"
+              className="font-medium text-foreground hover:text-orkast-blue transition-colors py-2"
             >
               Why Us
             </button>

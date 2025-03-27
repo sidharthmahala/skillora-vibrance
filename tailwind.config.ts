@@ -33,7 +33,7 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				skillora: {
+				orkast: {
 					blue: '#3498db',
 					purple: '#8e44ad',
 					pink: '#ff3399',
@@ -136,7 +136,7 @@ export default {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-				'gradient-skillora': 'linear-gradient(90deg, #3498db, #8e44ad, #ff3399)',
+				'gradient-orkast': 'linear-gradient(90deg, #3498db, #8e44ad, #ff3399)',
 			},
 		}
 	},

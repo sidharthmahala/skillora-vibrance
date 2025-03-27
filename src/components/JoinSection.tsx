@@ -61,28 +61,28 @@ const JoinSection: React.FC = () => {
     >
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-skillora-purple/5 via-skillora-blue/5 to-skillora-pink/5"></div>
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-skillora-blue/10 filter blur-3xl"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 rounded-full bg-skillora-pink/10 filter blur-3xl"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-orkast-purple/5 via-orkast-blue/5 to-orkast-pink/5"></div>
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-orkast-blue/10 filter blur-3xl"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-96 h-96 rounded-full bg-orkast-pink/10 filter blur-3xl"></div>
       </div>
       
-      <div className="container-skillora relative z-10">
+      <div className="container-orkast relative z-10">
         <div 
           ref={contentRef} 
           className="opacity-0 max-w-4xl mx-auto"
         >
           <div className="glass-light rounded-2xl p-10 border border-white/20 shadow-xl relative overflow-hidden">
             {/* Geometric accents */}
-            <div className="absolute -top-16 -right-16 w-32 h-32 bg-skillora-blue/10 rounded-full"></div>
-            <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-skillora-purple/10 rounded-full"></div>
+            <div className="absolute -top-16 -right-16 w-32 h-32 bg-orkast-blue/10 rounded-full"></div>
+            <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-orkast-purple/10 rounded-full"></div>
             
             <div className="relative z-10">
               <div className="text-center mb-10">
-                <div className="inline-block px-3 py-1 rounded-full bg-skillora-pink/10 text-skillora-pink font-medium text-sm mb-6">
+                <div className="inline-block px-3 py-1 rounded-full bg-orkast-pink/10 text-orkast-pink font-medium text-sm mb-6">
                   Join The Movement
                 </div>
                 <h2 className="heading-lg">
-                  <span className="bg-gradient-to-r from-skillora-blue to-skillora-purple bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-orkast-blue to-orkast-purple bg-clip-text text-transparent">
                     Ready to Transform Your Future?
                   </span>
                 </h2>
@@ -96,13 +96,13 @@ const JoinSection: React.FC = () => {
                   <input
                     type="email"
                     placeholder="Enter your email address"
-                    className="w-full px-6 py-4 rounded-lg bg-white border border-gray-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-skillora-blue/50 transition-all"
+                    className="w-full px-6 py-4 rounded-lg bg-white border border-gray-200 shadow-sm focus:outline-none focus:ring-2 focus:ring-orkast-blue/50 transition-all"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
                   <button 
                     type="submit" 
-                    className="absolute right-2 top-2 bottom-2 px-5 rounded-md bg-gradient-to-r from-skillora-blue to-skillora-purple text-white transition-all hover:shadow-lg disabled:opacity-70"
+                    className="absolute right-2 top-2 bottom-2 px-5 rounded-md bg-gradient-to-r from-orkast-blue to-orkast-purple text-white transition-all hover:shadow-lg disabled:opacity-70"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
