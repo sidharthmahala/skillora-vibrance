@@ -11,7 +11,7 @@ const WhyChooseUsSection: React.FC = () => {
     {
       name: "Alex Johnson",
       role: "Software Engineer",
-      quote: "Skillora completely changed my career trajectory. I went from knowing basic coding to landing a job at a top tech company in just 6 months.",
+      quote: "Orkast completely changed my career trajectory. I went from knowing basic coding to landing a job at a top tech company in just 6 months.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
     },
     {
@@ -23,7 +23,7 @@ const WhyChooseUsSection: React.FC = () => {
     {
       name: "Michael Chen",
       role: "Digital Marketer",
-      quote: "What sets Skillora apart is how they teach the mindset behind the skills. I've tried other platforms, but none come close to this level of depth.",
+      quote: "What sets Orkast apart is how they teach the mindset behind the skills. I've tried other platforms, but none come close to this level of depth.",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80"
     }
   ];
@@ -53,15 +53,15 @@ const WhyChooseUsSection: React.FC = () => {
     <section 
       id="why-choose-us" 
       ref={sectionRef}
-      className="section bg-skillora-dark text-white relative"
+      className="section bg-orkast-dark text-white relative"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-skillora-blue/10 to-transparent"></div>
-        <div className="absolute bottom-0 right-0 w-full h-64 bg-gradient-to-t from-skillora-purple/10 to-transparent"></div>
+        <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-orkast-blue/10 to-transparent"></div>
+        <div className="absolute bottom-0 right-0 w-full h-64 bg-gradient-to-t from-orkast-purple/10 to-transparent"></div>
       </div>
       
-      <div className="container-skillora relative z-10">
+      <div className="container-orkast relative z-10">
         <div 
           ref={contentRef} 
           className="opacity-0"
@@ -71,8 +71,8 @@ const WhyChooseUsSection: React.FC = () => {
               Why Choose Us
             </div>
             <h2 className="heading-lg">
-              <span className="bg-gradient-to-r from-skillora-blue to-skillora-pink bg-clip-text text-transparent">
-                The Skillora Difference
+              <span className="bg-gradient-to-r from-orkast-blue to-orkast-pink bg-clip-text text-transparent">
+                The Orkast Difference
               </span>
             </h2>
             <p className="text-lg text-white/80 mt-6">
