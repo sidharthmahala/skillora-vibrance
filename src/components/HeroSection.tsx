@@ -93,8 +93,8 @@ const HeroSection: React.FC = () => {
           <div className="hero-image relative w-full max-w-lg aspect-square">
             <div className="absolute inset-0 bg-gradient-to-br from-orkast-blue/80 via-orkast-purple/80 to-orkast-pink/80 rounded-2xl opacity-80"></div>
             <img
-              src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b"
-              alt="Futuristic learning environment"
+              src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485"
+              alt="Future education technology with AI"
               className="w-full h-full object-cover rounded-2xl mix-blend-overlay"
             />
             <div className="absolute inset-0 glass-card rounded-2xl opacity-30"></div>
