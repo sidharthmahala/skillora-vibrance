@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
     >
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="hero-bg absolute top-0 right-0 w-full h-full bg-gradient-radial from-skillora-purple/20 via-transparent to-transparent opacity-50"></div>
+        <div className="hero-bg absolute top-0 right-0 w-full h-full bg-gradient-radial from-skillora-blue/20 via-transparent to-transparent opacity-50"></div>
         <div className="absolute top-1/4 left-1/3 w-72 h-72 rounded-full bg-skillora-blue/20 filter blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/3 w-96 h-96 rounded-full bg-skillora-pink/20 filter blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
       </div>
