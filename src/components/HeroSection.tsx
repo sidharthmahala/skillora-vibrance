@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { ArrowDown } from 'lucide-react';
 
@@ -51,7 +50,6 @@ const HeroSection: React.FC = () => {
       ref={sectionRef}
       className="min-h-screen flex items-center pt-24 overflow-hidden relative"
     >
-      {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="hero-bg absolute top-0 right-0 w-full h-full bg-gradient-radial from-orkast-blue/20 via-transparent to-transparent opacity-50"></div>
         <div className="absolute top-1/4 left-1/3 w-72 h-72 rounded-full bg-orkast-blue/20 filter blur-3xl animate-pulse"></div>
@@ -93,8 +91,8 @@ const HeroSection: React.FC = () => {
           <div className="hero-image relative w-full max-w-lg aspect-square">
             <div className="absolute inset-0 bg-gradient-to-br from-orkast-blue/80 via-orkast-purple/80 to-orkast-pink/80 rounded-2xl opacity-80"></div>
             <img
-              src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485"
-              alt="Future education technology with AI"
+              src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7"
+              alt="Futuristic digital education with AI"
               className="w-full h-full object-cover rounded-2xl mix-blend-overlay"
             />
             <div className="absolute inset-0 glass-card rounded-2xl opacity-30"></div>
