@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from 'react';
 import { ArrowDown } from 'lucide-react';
 const HeroSection: React.FC = () => {
@@ -90,7 +91,7 @@ const HeroSection: React.FC = () => {
           <div className="hero-image relative w-full max-w-lg aspect-square">
             <div className="absolute inset-0 bg-gradient-to-br from-orkast-blue/80 via-orkast-purple/80 to-orkast-pink/80 rounded-2xl opacity-80"></div>
             <img
-              src="images/hero-image.jpg"
+              src="/src/images/hero-image.jpg"
               alt="Futuristic digital education with AI"
               className="w-full h-full object-cover rounded-2xl mix-blend-overlay"
             />
