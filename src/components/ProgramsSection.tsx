@@ -1,87 +1,109 @@
 
 import React, { useRef, useEffect } from 'react';
 import ProgramCard from './ProgramCard';
-import { CreditCard, Briefcase, Code, Brain, Clock, Zap, Users, MessageSquare, BookOpen } from 'lucide-react';
+import { CreditCard, Briefcase, Code, Brain, Clock, Zap, Users, MessageSquare, BookOpen, Video, Share2, Film } from 'lucide-react';
 
 const ProgramsSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
-  const programs = [
+const programs = [
     {
-      title: "Financial Literacy",
-      description: "Learn to manage your finances, invest wisely, and build wealth for the future.",
-      icon: <CreditCard size={24} />,
-      color: "#3498db"
+        title: "Financial Mastery & Wealth Building",
+        description: "Learn to manage money, invest wisely, and build long-term wealth.",
+        icon: <CreditCard size={24} />,
+        color: "#3498db"
     },
     {
-      title: "Entrepreneurship & Business",
-      description: "Discover how to start and scale successful businesses in the modern economy.",
-      icon: <Briefcase size={24} />,
-      color: "#8e44ad"
+        title: "Entrepreneurship & Business Growth",
+        description: "Discover how to start, scale, and sustain successful businesses.",
+        icon: <Briefcase size={24} />,
+        color: "#8e44ad"
     },
     {
-      title: "Digital Skills & AI",
-      description: "Master the digital tools and AI concepts that are reshaping industries worldwide.",
-      icon: <Code size={24} />,
-      color: "#ff3399"
+        title: "AI & Digital Skills for the Future",
+        description: "Master AI tools, automation, and essential digital skills for career growth.",
+        icon: <Code size={24} />,
+        color: "#ff5733"
     },
     {
-      title: "Career Hacking",
-      description: "Accelerate your career with strategies for workplace success and advancement.",
-      icon: <Brain size={24} />,
-      color: "#2ecc71"
+        title: "Career Acceleration & Workplace Success",
+        description: "Strategies to land better jobs, get promotions, and thrive in any career.",
+        icon: <Brain size={24} />,
+        color: "#2ecc71"
     },
     {
-      title: "Productivity & Time Management",
-      description: "Maximize your efficiency and achieve more in less time with proven systems.",
-      icon: <Clock size={24} />,
-      color: "#f39c12"
+        title: "Productivity & High-Performance Systems",
+        description: "Maximize efficiency, manage time better, and achieve more with less effort.",
+        icon: <Clock size={24} />,
+        color: "#f1c40f"
     },
     {
-      title: "Biohacking & Optimization",
-      description: "Optimize your physical and mental performance through science-based approaches.",
-      icon: <Zap size={24} />,
-      color: "#1abc9c"
+        title: "Biohacking & Peak Performance",
+        description: "Optimize physical and mental performance using science-backed techniques.",
+        icon: <Zap size={24} />,
+        color: "#1abc9c"
     },
     {
-      title: "Communication & Networking",
-      description: "Build powerful relationships and communicate effectively in any situation.",
-      icon: <Users size={24} />,
-      color: "#e74c3c"
+        title: "Networking, Influence & Communication",
+        description: "Build powerful relationships and master persuasion techniques for success.",
+        icon: <Users size={24} />,
+        color: "#e74c3c"
     },
     {
-      title: "Psychology of Influence",
-      description: "Understand the principles of persuasion and ethical influence in business and life.",
-      icon: <MessageSquare size={24} />,
-      color: "#9b59b6"
+        title: "Content Creation & Personal Branding",
+        description: "Grow your audience on YouTube, Instagram, and TikTok while monetizing your brand.",
+        icon: <Video size={24} />,
+        color: "#9b59b6"
     },
     {
-      title: "Critical Thinking",
-      description: "Develop robust problem-solving skills and logical reasoning abilities.",
-      icon: <BookOpen size={24} />,
-      color: "#16a085"
+        title: "Social Media & Viral Growth Strategies",
+        description: "Learn proven tactics to gain followers, increase engagement, and go viral.",
+        icon: <Share2 size={24} />,
+        color: "#e67e22"
+    },
+    {
+        title: "Video Editing & Professional Content Production",
+        description: "Create high-quality, engaging videos for YouTube and social media.",
+        icon: <Film size={24} />,
+        color: "#d35400"
+    },
+    {
+        title: "Psychology of Influence & Persuasion",
+        description: "Understand the principles behind ethical persuasion in business and life.",
+        icon: <MessageSquare size={24} />,
+        color: "#8e44ad"
+    },
+    {
+        title: "Critical Thinking & Problem-Solving",
+        description: "Develop robust problem-solving skills and logical reasoning abilities.",
+        icon: <BookOpen size={24} />,
+        color: "#16a085"
     }
-  ];
+];
+
 
   useEffect(() => {
+    const currentContentRef = contentRef.current; // Store the current value of the ref
+  
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && contentRef.current) {
-          contentRef.current.classList.add('animate-fade-in');
+        if (entry.isIntersecting && currentContentRef) {
+          currentContentRef.classList.add('animate-fade-in');
         }
       },
       { threshold: 0.1 }
     );
-
-    if (contentRef.current) {
-      observer.observe(contentRef.current);
+  
+    if (currentContentRef) {
+      observer.observe(currentContentRef);
     }
-
+  
     return () => {
-      if (contentRef.current) {
-        observer.unobserve(contentRef.current);
+      if (currentContentRef) {
+        observer.unobserve(currentContentRef);
       }
+      observer.disconnect(); // Properly disconnect the observer
     };
   }, []);
 
