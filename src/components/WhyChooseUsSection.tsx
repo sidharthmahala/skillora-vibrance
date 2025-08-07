@@ -71,7 +71,7 @@ const WhyChooseUsSection: React.FC = () => {
               Why Choose Us
             </div>
             <h2 className="heading-lg">
-              <span className="bg-gradient-to-r from-orkast-blue to-orkast-pink bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-orkast-blue to-orkast-blue bg-clip-text text-transparent">
                 The Orkast Difference
               </span>
             </h2>

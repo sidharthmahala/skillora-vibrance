@@ -67,7 +67,7 @@ const AnimatedCounter: React.FC<AnimatedCounterProps> = ({
   return (
     <div ref={countRef} className="text-4xl md:text-5xl font-bold font-poppins">
       <span>{prefix}</span>
-      <span className="bg-gradient-to-r from-orkast-blue to-orkast-purple bg-clip-text text-transparent">
+      <span className="bg-gradient-to-r from-orkast-blue to-orkast-blue bg-clip-text text-transparent">
         {count.toLocaleString()}
       </span>
       <span>{suffix}</span>
